@@ -79,7 +79,7 @@ const Sidebar = () => {
 
     return (
         <div className="w-64 p-5 h-screen">
-            <h1 className="text-2xl font-bold mb-10 mt-4">Yaniko Store </h1>
+            <h1 className="text-2xl font-bold mb-10 mt-4">Koniya Store </h1>
             <section>
                 <input
                     type="text"
@@ -137,7 +137,7 @@ const Sidebar = () => {
                         {keywords.map((keyWord, index) => (
                             <button
                                 key={index}
-                                onClick={() => handleKeywordClick(keyword)}
+                                onClick={() => handleKeywordClick(keyWord)}
                                 className="block mb-2 px-4 w-full text-left border rounded hover:bg-gray-200"
                             >
                                 {keyWord.toUpperCase()}
