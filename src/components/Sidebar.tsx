@@ -92,14 +92,14 @@ const Sidebar = () => {
                     <input
                         type="text"
                         className="border-2 px-5 py-3 mb-3 w-full"
-                        placeholder="Min"
+                        placeholder="Min price"
                         value={minPrice ?? ""}
                         onChange={handleMinPriceChange}
                     />
                     <input
                         type="text"
                         className="border-2 px-5 py-3 mb-3 w-full"
-                        placeholder="Max"
+                        placeholder="Max price"
                         value={maxPrice ?? ""}
                         onChange={handleMaxPriceChange}
                     />

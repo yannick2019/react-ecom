@@ -116,7 +116,7 @@ const MainContent = () => {
     };
 
     return (
-        <section className="xl:w-[55rem] lg:w-[55rem] sm:w-[40rem] xs:w-[20rem] mr-[10rem] p-5">
+        <section className="xl:w-[55rem] lg:w-[55rem] sm:w-[40rem] xs:w-[20rem] p-5">
             <div className="mb-5">
                 <div className="flex flex-col sm:flex-row justify-between items-center">
                     <div className="relative mb-5 mt-5">
@@ -170,7 +170,7 @@ const MainContent = () => {
                 </div>
 
                 {/* pagination */}
-                <div className="flex flex-col sm:flex-row justify-between items-center mt-5">
+                <div className="flex flex-col sm:flex-row justify-between items-center mt-7">
                     <button
                         onClick={() => handlePageChange(currentPage - 1)}
                         disabled={currentPage === 1}

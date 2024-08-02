@@ -3,13 +3,15 @@ import { blogs } from "../utils/blogs";
 
 const PopularBlogs = () => {
     return (
-        <div className="bg-white p-5 w-[23rem] mt-4 border ml-5 rounded">
+        <div className="bg-white p-5 w-[23rem] mt-4 border ml-5 rounded shadow-lg">
             <h2 className="text-xl font-bold mb-5">Popular blogs</h2>
             <ul>
                 {blogs.map((blog, index) => (
                     <li key={index} className="mb-4">
                         <div className="flex justify-between items-center">
-                            <span className="font-bold mb-2">{blog.title}</span>
+                            <span className="font-bold mb-2 cursor-pointer">
+                                {blog.title}
+                            </span>
                         </div>
                         <span className="text-gray-600">
                             Publish by {blog.author}

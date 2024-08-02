@@ -19,7 +19,7 @@ const BookCard: React.FC<BookCardProps> = ({ id, title, image, price }) => {
             </Link>
 
             <h2 className="font-bold">{title}</h2>
-            <p>€{price}</p>
+            <p className="mt-2">€{price}</p>
         </div>
     );
 };

@@ -32,7 +32,7 @@ const ProductPage = () => {
     if (!product) return <div>Loading...</div>;
 
     return (
-        <div className="p-5 w-[60%]">
+        <div className="p-5 w-[60%] mt-5">
             <button
                 onClick={() => navigate(-1)}
                 className="mb-5 px-2 bg-black text-white rounded"
