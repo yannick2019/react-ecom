@@ -109,7 +109,10 @@ const MainContent = () => {
             <div className="mb-5">
                 <div className="flex flex-col sm:flex-row justify-between items-center">
                     <div className="relative mb-5 mt-5">
-                        <button className="border px-4 py-2 rounded-full flex items-center">
+                        <button
+                            onClick={() => setDropdownOpen(!dropdownOpen)}
+                            className="border px-4 py-2 rounded-full flex items-center"
+                        >
                             <Tally3 className="mr-2" />
 
                             {filter === "all"
@@ -189,6 +192,7 @@ const MainContent = () => {
                         Next
                     </button>
                 </div>
+                {/* end of pagination */}
             </div>
         </section>
     );
