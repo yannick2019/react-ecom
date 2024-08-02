@@ -77,28 +77,28 @@ const Sidebar = () => {
     };
 
     return (
-        <div className="w-64 p-5 h-screen">
+        <div className="w-72 p-5 h-screen">
             <h1 className="text-2xl font-bold mb-10 mt-4">Koniya Store </h1>
-            <section>
+            <section className="w-64">
                 <input
                     type="text"
-                    className="border-2 rounded px-2 sm:mb-0"
+                    className="border-2 rounded px-2 py-3 w-full sm:mb-0"
                     placeholder="Search Product"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
 
-                <div className="flex jusstify-center items-center">
+                <div className="flex justify-between mt-3 items-center gap-2">
                     <input
                         type="text"
-                        className="border-2 mr-2 px-5 py-3 mb-3 w-full"
+                        className="border-2 px-5 py-3 mb-3 w-full"
                         placeholder="Min"
                         value={minPrice ?? ""}
                         onChange={handleMinPriceChange}
                     />
                     <input
                         type="text"
-                        className="border-2 mr-2 px-5 py-3 mb-3 w-full"
+                        className="border-2 px-5 py-3 mb-3 w-full"
                         placeholder="Max"
                         value={maxPrice ?? ""}
                         onChange={handleMaxPriceChange}
@@ -129,7 +129,7 @@ const Sidebar = () => {
             </section>
 
             {/* Keywords Section */}
-            <section>
+            <section className="w-64">
                 <div className="mb-5 mt-4">
                     <h2 className="text-xl font-semibold mb-3">Keywords</h2>
                     <div>
