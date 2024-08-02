@@ -17,10 +17,4 @@ export const blogs = [
         likes: 96,
         comments: 23,
     },
-    {
-        title: "My Amazing Blog Title 4",
-        author: "Dexter",
-        likes: 86,
-        comments: 56,
-    },
 ];
