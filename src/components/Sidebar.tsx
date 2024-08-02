@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useFilter } from "./FilterContext";
+import SpotlightButton from "./custom/SpotlightButton";
 
 interface Product {
     category: string;
@@ -145,12 +146,16 @@ const Sidebar = () => {
                     </div>
                 </div>
 
-                <button
+                <SpotlightButton
+                    handleResetFilters={handleResetFilters}
+                    title="Reset Filters"
+                />
+                {/* <button
                     onClick={handleResetFilters}
                     className="w-full mb-[4rem] py-2 bg-black text-white rounded mt-5"
                 >
                     Reset Filters
-                </button>
+                </button> */}
             </section>
         </div>
     );
