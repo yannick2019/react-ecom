@@ -78,7 +78,7 @@ const Sidebar = () => {
 
     return (
         <div className="w-72 p-5 h-screen">
-            <h1 className="text-2xl font-bold mb-10 mt-4">Koniya Store </h1>
+            <h1 className="text-3xl font-bold mb-10 mt-4">Koniya Store </h1>
             <section className="w-64">
                 <input
                     type="text"

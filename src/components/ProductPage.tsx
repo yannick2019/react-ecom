@@ -43,7 +43,7 @@ const ProductPage = () => {
             <img
                 src={product.images[0]}
                 alt={product.title}
-                className="w-[50%] h-auto mb-5"
+                className="w-[40%] h-auto mb-5"
             />
 
             <h1 className="text-2xl mb-4 font-bold">{product.title}</h1>

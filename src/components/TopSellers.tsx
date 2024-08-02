@@ -75,7 +75,7 @@ const TopSellers = () => {
 
                         <button
                             onClick={() => handleFollowClick(index)}
-                            className={`py-1 px-3 rounded ${
+                            className={`py-1 px-3 rounded transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 ${
                                 author.isFollowing
                                     ? "bg-red-500 text-white"
                                     : "bg-black text-white"

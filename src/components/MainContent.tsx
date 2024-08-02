@@ -133,7 +133,7 @@ const MainContent = () => {
                         </button>
 
                         {dropdownOpen && (
-                            <div className="absolute bg-white border border-gray-300 rounded mt-2 w-full sm:w-40">
+                            <div className="absolute bg-white border border-gray-300 rounded mt-2 w-full sm:w-40 drop-shadow-md">
                                 <button
                                     onClick={() => setFilter("cheap")}
                                     className="block px-4 w-full text-left hover:bg-gray-200"
