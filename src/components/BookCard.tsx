@@ -4,7 +4,7 @@ interface BookCardProps {
     id: string;
     title: string;
     image: string;
-    price: string;
+    price: number;
 }
 
 const BookCard: React.FC<BookCardProps> = ({ id, title, image, price }) => {

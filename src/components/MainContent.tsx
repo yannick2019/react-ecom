@@ -4,11 +4,22 @@ import { Tally3 } from "lucide-react";
 import axios from "axios";
 import BookCard from "./BookCard";
 
+interface Product {
+    id: string;
+    title: string;
+    description: string;
+    price: number;
+    rating: number;
+    category: string;
+    thumbnail: string;
+    images: string[];
+}
+
 const MainContent = () => {
     const { searchQuery, selectedCategory, minPrice, maxPrice, keyword } =
         useFilter();
 
-    const [products, setProducts] = useState<any[]>([]);
+    const [products, setProducts] = useState<Product[]>([]);
     const [filter, setFilter] = useState("all");
     const [currentPage, setCurrentPage] = useState(1);
     const [dropdownOpen, setDropdownOpen] = useState(false);

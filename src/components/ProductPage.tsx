@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 interface Product {
-    id: number;
+    id: string;
     title: string;
     description: string;
     price: number;
